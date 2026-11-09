@@ -1,0 +1,31 @@
+<%- include('../cabecalho')%>
+    <div>
+        <tr><a href="/dinossauro"> ← Voltar </a></tr>
+        <h3>alterar novo dinossauro</h3>
+
+        <form method="post">
+            <p>ID</p>
+            <input type="text" name="id" value="<%=dinossauro.id%>" readonly>
+            <br><br>
+            <p>nome da especie</p>
+            <input type="text" name="nome" value="<%=dinossauro.nome%>">
+            <br><br>
+            <p>periodo geologico</p>
+            <input type="text" name="periodo" value="<%=dinossauro.especie%>">
+            <br><br>
+            <select>
+                <option value="">selecione...</option>
+                <option value="">theropoda</option>
+                <option value="">sauropoda</option>
+                <option value="">ceratopsia</option>
+                <option value="">ornithopoda</option>
+                <option value="">não esta na lista</option>
+            </select>
+            <button type="submit">Adicionar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </div>
+
+    </body>
+
+    </html>

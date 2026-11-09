@@ -1,0 +1,43 @@
+<%- include('../cabecalho')%>
+    <div>
+        <h3>Paleontologos</h3>
+        <a href="/paleontologo/add"> Novo Paleontólogo</a><br><br>
+        <table>
+            <tr>
+                <td>
+                    <h3>Nome</h3>
+                </td>
+
+                <td>
+                    <h3>Nascimento</h3>
+                </td>
+                <td>
+                    <h3>Descoberta</h3>
+                </td>
+                <td>
+                    <h3>Ações</h3>
+                </td>
+            </tr>
+
+            <% paleontologos.forEach(paleontologo=> { %>
+                <tr>
+                    <td>
+                        <%= paleontologo.nome %>
+                    </td>
+                    <td>
+                        <%= paleontologo.nascimento %>
+                    </td>
+                    <td>
+                        <%= paleontologo.descoberta %>
+                    </td>
+                    <td>
+                        <a href="/paleontologo/upd/<%=paleontologo.id%>">✏️</a>
+                        <a href="/paleontologo/del/<%=paleontologo.id%>">🗑️</a>
+                    </td>
+                </tr>
+                <% }) %>
+        </table>
+    </div>
+    </body>
+
+    </html>

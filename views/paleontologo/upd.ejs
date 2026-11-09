@@ -1,0 +1,22 @@
+<%- include('../cabecalho')%>
+    <div>
+        <a href="/paleontologo">← Voltar</a>
+        <h3>Alterar Paleontólogo</h3>
+        <form method="post"="/paleontologo/upd/<%= paleontologo.id %>">
+            <p>Nome</p>
+            <input type="text" name="nome" value="<%= paleontologo.nome %>" required>
+            <p>Nascimento (ano)</p>
+            <input type="number" name="nascimento" value="<%= paleontologo.nascimento %>" required>
+            <p>Descoberta</p>
+            <input type="text" name="descoberta" value="<%= paleontologo.descoberta %>" required>
+            <br><br>
+            <button type="submit">Salvar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+
+    </div>
+    </body>
+
+    </html>
+    <button> type="reset">Cancelar</button>
+    </form>
